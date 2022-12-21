@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #212121;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body{
+    font-family: "Muller", sans-serif;
+    font-weight: 500;
+    line-height: 18px;
+    font-size: 14px;
+    color: #212121;
+}
+
+header {
+    position:fixed;
+    width:100%;
+    transition: background .3s ease;
+    padding: 20px 0;
+    z-index: 100;
+    min-height: 60px;
+    font-size: 20px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 20px;
+    padding-top: 35px;
+}
+
+.menu__logo{
+    height: 54px;
+    width: 215px;
+    font-size: 22px;
+    color: #46b1de;
+    display: flex;
+    font-family: 'Russo One', sans-serif;
+}
+
+.menu__logo-img{
+    width: 48px;
+    height: 54px;
+}
+
+.menu__logo-text{
+    padding: 2px 0 0 5px;
+    line-height: 27px;
+}
+
+.menu__phone{
+    margin-top: 35px;
+    position: relative;
+}
+
+.menu__phone:before{
+    position: absolute;
+    content:'';
+    background-image: url("../img/phone.svg");
+    width: 18px;
+    height: 18px;
+    left: -28px;
+    top:0px;
+}
+
+.content {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+}
+
+.content::before {
+    position: absolute;
+    content:'';
+    background-image: url("../img/lady.png");
+    width: 644px;
+    height: 631px;
+    bottom: 0;
+    right: 7%;
+}
+
+.content__box{
+    padding-top: 200px;
+    max-width: 520px;
+    width: 100%;
+    position: relative;
+    z-index: +1;
+}
+
+.content__title{
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.content__title-blue{
+    color: #46b1de;
+    display: inline-block;
+}
+
+.content__descr{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.content__buttons{
+    margin-top: 30px;
+}
+
+.content__button{
+    width: 150px;
+    border: 1px solid #212121;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 19px 15px 14px 15px;
+}
+
+.call__button{
+    margin-left: 10px;
+    color: #fff;
+    background-color: #46b1de;
+    transition: all 0.5s;
+}
+
+.call__button:hover{
+    color: #46b1de;
+    background-color: #fff;
+}
+
+.sercices__button{
+    margin-left: 100px;
+    color: #46b1de;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.sercices__button:hover{
+    color:  #fff;
+    background-color: #46b1de;
+}
+
+.content__advantages{
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    gap: 45px;
+    justify-content: center;
+    margin-top: 230px;
+}
+
+.advantages__item{
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #212121;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.advantages__item-number{
+    color: #46b1de;
+    font-size: 60px;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+
+
+.reasons{
+    margin-top: 130px;
+}
+
+.reasons__title{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-family: 'Russo One', sans-serif;
+}
+
+.reasons__title span{
+    color: #46b1de;
+}
+
+.reasons__descr{
+    margin: 0 auto;
+    max-width: 550px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.reasons__items{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 25px;
+    grid-auto-flow: column;
+    background-color: #a2c6d4;
+    padding: 10px;
+    max-width: 900px;
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+.reasons__item{    
+    background-color: #fff;
+    max-width: 500px;
+    border-radius: 5px;
+    padding: 10px 10px 30px;
+}
+
+.reasons__item-up{
+    display: flex;
+    align-items: center;
+    color: #46b1de; 
+    margin-bottom: 15px;   
+}
+
+.reasons__item-number{
+    font-size: 32px;
+    line-height: 32px;
+    margin-right: 15px;
+    font-weight: 700;
+}
+
+.reasons__item-title{
+    max-width: 160px;
+}
+
+.reasons__item-text{
+    max-width: 220px;
+}
+
+footer{
+    background: linear-gradient(90deg, rgba(161,199,212,1) 0%, rgba(6,127,170,1) 100%);
+    min-height: 330px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.footer__logo-title{
+    font-family: "Muller", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0e2b49;
+    padding-top: 6px;
+    text-transform: uppercase;
+}
+
+.footer__logo-title span{
+    line-height: 18px;
+    font-size: 18px;
+    display: block;
+    text-transform: none;
+    margin-top: 3px;
+}
+
+.footer__logo-img{
+    width: 43px;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.footer__logo{
+    display: flex;
+}
+
+.footer__info{
+    display: flex;
+    margin-top: 30px;
+}
+
+.contacts__social-flex{
+    display: flex;
+}
+
+.footer__lang{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.footer__lang-item:first-child{
+    padding-right: 5px;
+    border-right: 1px solid #212121;
+    line-height: 15px;
+    font-weight: 700;
+}
+
+.footer__nav-item{
+    margin-bottom: 10px;
+}
+
+.footer__working-hours{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.working-hours__title{
+    margin-bottom: 5px;
+}
+
+.contacts{
+    color: #fff;
+    font-size: 14px;
+    max-width: 300px;
+    width: 100%;
+}
+
+
+.contacts__title{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 15px 5px;
+}
+
+.contacts__name{
+    margin-top: 10px;
+}
+
+.contacts__adress{
+    margin: 10px 0;
+}
+
+.contacts__social, .contacts__social-flex{
+    margin-bottom: 10px;
+}
+
+.contacts__social-flex a{
+    display: flex;
+    align-items: center;
+    color: #fff
+}
+
+.contacts__social-flex img{
+    margin-right: 15px;
+}
+
+.contacts__social-item{
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.contacts__copy{
+    text-align: right;
+    font-size: 12px;
+    line-height: 12px;
+}
