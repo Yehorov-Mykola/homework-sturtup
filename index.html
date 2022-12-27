@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Homework-9</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
@@ -19,23 +17,30 @@
     <div class="container">
       <div class="header__inner">
         <a href="#" class="menu__logo">
-          <img class="menu__logo-img" src="img/logo.png" alt="logo">
-          <p class="menu__logo-text">DR Nikola Tesla dentist</p>
+          <img class="menu__logo-img" src="img/logo.svg" alt="logo">
+          <p class="menu__logo-text">DR. Nikola Tesla <span>dentist</span></p>
         </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__link" href="#">Preferences</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__link" href="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__link" href="#">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="tel:380963092145" class="menu__phone">099-999-99-99</a>
+        <div class="menu__wrapper">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Main</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Services</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:380963092145" class="menu__phone">+38 (099) 999-99-99</a>
+          <div class="menu__lang">
+            <a href="#" class="menu__lang-item menu__lang-item--ua">UA</a>
+            <a href="#" class="menu__lang-item menu__lang-item--en">EN</a>
+          </div>
+        </div>
+
       </div>
   </header>
 
@@ -43,13 +48,15 @@
     <section class="content">
       <div class="container">
         <div class="content__box">
-          <h1 class="content__title">PROFESSIONALAND PAINLESS <span class="content__title-blue">TREATMENT OF TEETH<span>
+          <h1 class="content__title">PROFESSIONAL <br> AND PAINLESS <span class="content__title-blue">DENTAL
+              TREATMENT<span>
           </h1>
-          <p class="content__descr">Full diagnosis of oral cavity and create an individual treatment plan. Call and get
-            an absolutely free consultation</p>
+          <p class="content__descr">I will conduct a complete diagnosis of the oral cavity and build
+            an individual treatment plan. Call and get a completely free consultation
+          </p>
           <div class="content__buttons">
-            <a href="#" class="content__button call__button">CALL</a>
-            <a href="#" class="content__button sercices__button">SERVICES</a>
+            <a href="#" class="content__button content__button--call">CALL</a>
+            <a href="#" class="content__button content__button--services">SERVICES</a>
           </div>
         </div>
         <div class="content__advantages advantages">
@@ -57,19 +64,19 @@
             <div class="advantages__item-number">
               15
             </div>
-            <p class="advantages__item-text">Years providing dental tratment services<br> for adults and children</p>
+            <p class="advantages__item-text">years providing services for dental treatment for adults and children</p>
           </div>
           <div class="advantages__item">
             <div class="advantages__item-number">
               90%
             </div>
-            <p class="advantages__item-text">Clients contact me again</p>
+            <p class="advantages__item-text">clients apply to me again</p>
           </div>
           <div class="advantages__item">
             <div class="advantages__item-number">
               12
             </div>
-            <p class="advantages__item-text">months service warranty</p>
+            <p class="advantages__item-text">months warranty for the services provided</p>
           </div>
         </div>
       </div>
@@ -138,7 +145,24 @@
         </div>
       </div>
     </section>
+
+    <section class="appoinment">
+      <div class="appoinment__box">
+        <h2 class="appoinment__title">
+          Make an appointment
+        </h2>
+        <p class="appoinment__descr">
+          Fill out the form and we will contact you to make an appointment
+        </p>
+        <form class="form">
+          <input class="form__field form__field--name" type="text" maxlength="30" name="name" placeholder="Your name">
+          <input class="form__field form__field--phone" type="text" name="phone-number" placeholder="Phone number">
+          <input class="form__btn" type="submit" value="Sign in">
+        </form>
+      </div>
+    </section>
   </main>
+
   <footer>
     <div class="container">
       <div class="footer__inner">
@@ -173,7 +197,7 @@
                 9:00 - 19:00
               </div>
             </div>
-          </div>  
+          </div>
         </div>
 
         <div class="footer__right contacts">
@@ -192,10 +216,10 @@
               <p class="contacts__social-text">
                 +38 (099) 999-99-99
               </p>
-            </a>            
+            </a>
           </div>
           <div class="contacts__social">
-            <a href="viber://chat?number=%2B3380999999999"" class="contacts__social-item">
+            <a href="viber://chat?number=%2B3380999999999"" class=" contacts__social-item">
               <img src="img/viber.png" alt="viber">
             </a>
             <a href="tg://resolve?domain=%2B3380999999999" class="contacts__social-item">
@@ -211,7 +235,7 @@
               <p class="contacts__social-text">
                 dr.NikTes
               </p>
-            </a>            
+            </a>
           </div>
           <div class="contacts__social-flex">
             <a href="mailto:dr.niktes@gmail.com">
@@ -219,13 +243,13 @@
               <p class="contacts__social-text">
                 dr.niktes@gmail.com
               </p>
-            </a>            
+            </a>
           </div>
           <div class="contacts__copy">
             © Copyright 2022
+          </div>
         </div>
       </div>
-    </div>
   </footer>
 </body>
 
