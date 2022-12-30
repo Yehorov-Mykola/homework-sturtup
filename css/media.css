@@ -1,0 +1,288 @@
+@media (max-width: 1060px) {
+    .menu__logo{
+        margin-right: 10px;
+        min-width: 275px;
+    }
+    .menu__logo-text{
+        font-size: 30px;
+    }
+    .menu__logo-small-text{
+        font-size: 22px;
+    }
+    .menu__logo-img{
+        width: 55px;
+    }
+    .menu__list {
+        gap: 40px;
+    }
+    .menu__lang{
+        display: none;        
+    }
+    .menu__phone {
+        margin-left: 40px;
+    }
+    .menu__wrapper{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .advantages__item-number {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .content__advantages{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .advantages__item{
+        padding: 10px
+    }
+    .reasons__items{
+        gap: 12px 20px;
+    }
+    .reasons__item{
+        padding: 10px;
+    }
+    .reasons__item-title{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .form{
+        justify-content: space-between;
+    }
+    .form__field{
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 880px) {
+    .appoinment{
+        border: none;
+        box-shadow: none;
+        margin: -60px auto 30px
+    }
+    .gallery__items{
+        display: block;
+        text-align: center;
+    }
+    .gallery__item{
+        padding: 10px;
+    }
+    .footer__working-hours{
+        margin-left:50px;
+    }
+    .footer__logo-img {
+        width:50px;
+        height: 70px;
+    }
+    .footer__logo-title{
+        font-size: 30px;
+    }
+    .footer__logo-dentist{
+        font-size: 20px;
+    }
+    .contacts{
+        margin-left: 10px;
+    }
+    .contacts__title{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 760px) {
+    .menu__logo-img{
+        width: 33px;
+    }
+    .menu__logo-text{
+        font-size: 17px;
+        line-height: 18px;
+    }
+    .menu__logo-small-text{
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 0;
+    }
+    .menu__logo{
+        min-width: 160px;
+    }
+    .menu__list{
+        gap: 30px;
+    }
+    .menu__wrapper{
+        margin-top: 0;
+    }
+    .header{
+        padding-top: 30px;
+    }
+    .content__advantages{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .advantages__item{
+        padding: 10px;
+        min-height:0;
+    }
+    .advantages__item-number {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .advantages__item-text{
+        font-size: 16px;
+    }
+    .reasons{
+        margin-top: 280px;
+    }
+    .reasons__items{
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px auto 20px;
+    }
+    .reasons__title{
+        font-size: 28px;
+    }
+    .form{
+        display: block;
+    }
+    .form__field{
+        width: 100%;
+        margin: 10px 0;
+        text-align: left;
+    }
+    #form__btn{
+        width: 100%;
+    }
+    .appoinment{
+        border: none;
+        box-shadow: none;
+        margin: 0px auto 30px
+    }
+}
+
+@media (max-width: 640px) {
+    .menu{
+        display: none;
+    }
+    .menu__wrapper{
+        justify-content: flex-end;
+    }
+    .menu__phone{
+        font-weight: 400;
+        line-height: 14px;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    .menu__phone:before {
+        width: 15px;
+        height: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .content{
+        height: 568px;
+        background-position: bottom -33px right 50%, center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 208px, cover;
+    }
+    .content__box{
+        max-width: 100%;
+        text-align: center;
+        padding-top: 115px;
+    }
+    .content__buttons{
+        display: flex;
+        justify-content: space-around;        
+    }
+    .content__button{
+        display: block;
+        margin: 0;
+    }
+    .content__advantages{
+        padding-top: 250px;
+        gap: 15px;
+    }
+    .content__title{
+        font-weight: 700;
+        line-height: 130%;
+        font-size: 22px;
+        padding: 0 10px;
+    }
+    .content__title-span{
+        display: block;
+    }
+    .content__descr{
+        font-size: 12px;
+        line-height: 140%;
+        max-width: 460px;
+        margin-top: 5px;
+        padding: 0 10px;
+    }
+    .content__buttons{
+        margin-top: 10px;
+    }
+    .content__button{
+        min-width: 100px;
+        font-size: 14px;
+        line-height: 140%;
+        padding: 10px 5px;
+    }
+    .reasons{
+        margin-top: 340px;
+    }
+    .footer{
+        background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
+        min-height: 370px;
+    }
+    .footer__inner{
+        display: block;
+        padding: 30px 0;
+    }
+    .footer__logo-title{
+        font-size: 27px;
+    }
+    .footer__logo-dentist{
+        line-height: 140%;
+        font-size: 19px;
+    }
+    .footer__logo-img{
+        width: 55px;
+        height: 57px;
+    }
+    .footer__info{
+        margin-top: 27px;
+    }
+    .footer__nav-item{
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    .footer__lang{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .footer__working-hours{
+        margin-left:115px;
+    }
+    .working-hours__title, .working-hours__week{
+        font-size: 14px;
+    }
+    .contacts{
+        margin: 45px 0 0 0;
+        max-width:100%;
+    }
+    .contacts__title{
+        font-size: 21px;
+        line-height: 25px;
+        margin: 0 0 25px 0;
+    }
+    .contacts__item{
+        font-size: 17px;
+        line-height: 135%;
+    }
+    .contacts__item--social{
+        display: none;
+    }
+    .contacts__copy{
+        font-size: 11px;
+        line-height: 130%;
+        margin-right: 45px;
+        margin-top: 20px;
+    }
+}
