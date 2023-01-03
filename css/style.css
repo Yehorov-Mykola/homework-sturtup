@@ -10,7 +10,7 @@ a {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    color: #212121;
+    color: #1B1D1F;
 }
 
 a:active,
@@ -39,11 +39,23 @@ body{
     color: #1B1D1F;
 }
 
-header {
+.title{
+    text-align: center;
+    font-size: 34px;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+.title span{
+    color: var(--blue);
+}
+
+.header {
     position:fixed;
     width:100%;
     transition: background .3s ease;
     padding-top: 60px;
+    padding-bottom: 10px;
     z-index: 100;
     min-height: 60px;
 }
@@ -53,12 +65,34 @@ header {
     justify-content: space-between;
 }
 
+.menu__link{
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu__link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: auto;
+    right: 0;
+    background-color: var(--blue);
+    height: 2px;
+    bottom: -2px;
+    transition: all .2s;
+}
+
+.menu__link:hover::before{
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
 .menu__wrapper{
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
     max-width: 690px;
-    width: 100%;
 }
 
 .menu__list {
@@ -68,8 +102,7 @@ header {
 }
 
 .menu__logo{
-    height: 79px;
-    width: 335px;
+    min-width: 335px;
     font-size: 22px;
     color: var(--blue);
     display: flex;
@@ -77,7 +110,6 @@ header {
 
 .menu__logo-img{
     width: 71px;
-    height: 79px;
 }
 
 .menu__logo-text{
@@ -90,7 +122,7 @@ header {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.menu__logo-text span{
+.menu__logo-small-text{
     display: block;
     font-size: 27px;
     line-height: 27px;
@@ -137,24 +169,12 @@ header {
     font-weight: 700;
 }
 
-
 .content {
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: url("../img/lady.png"), url("../img/background.jpg");
+    background-position: bottom -106px right 24%, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, cover;
     height: 663px;
-    position: relative;
-}
-
-.content::before {
-    position: absolute;
-    content:'';
-    background-image: url("../img/lady.png");
-    width: 644px;
-    height: 631px;
-    bottom: 0;
-    right: 7%;
 }
 
 .content__box{
@@ -172,7 +192,7 @@ header {
     letter-spacing: 0.1em;
 }
 
-.content__title-blue{
+.content__title-span{
     color: var(--blue);
     display: inline-block;
 }
@@ -190,19 +210,18 @@ header {
 }
 
 .content__button{
-    width: 180px;
-    height: 60px;
+    min-width: 180px;
     text-align: center;
     font-weight: 600;
     line-height: 140%;
     font-size: 19px;
     padding: 16px 15px;
     border-radius: 8px;
+    transition: all 0.7s;
 }
 
 .content__button--call{
-    color: #fff;
-    transition: all 0.7s;
+    color: #fff;    
     background: linear-gradient(97.59deg, var(--blue) 9.8%, #0591CC 95.1%);
     box-shadow: 0px 2px 10px var(--blue);
 }
@@ -218,7 +237,6 @@ header {
     color: var(--blue);
     background-color: #fff;
     box-shadow: 0px 2px 10px #DDE0DC;
-    transition: all 0.7s;
 }
 
 .content__button--services:hover{
@@ -242,7 +260,6 @@ header {
     background-color: #fff;
     z-index: 1;
     min-height: 120px;
-    max-width: 280px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
@@ -265,17 +282,6 @@ header {
 
 .reasons{
     margin-top: 148px;
-}
-
-.reasons__title{
-    text-align: center;
-    font-size: 34px;
-    line-height: 130%;
-    font-weight: 400;
-}
-
-.reasons__title span{
-    color: var(--blue);
 }
 
 .reasons__descr{
@@ -305,9 +311,8 @@ header {
 
 .reasons__item{    
     background-color: #fff;
-    max-width: 500px;
     border-radius: 8px;
-    padding: 10px 20px 45px 20px;
+    padding: 10px 20px 20px 20px;
 }
 
 .reasons__item-up{
@@ -336,12 +341,171 @@ header {
     font-size: 16px;
 }
 
+.services{
+    margin-bottom: 90px;
+}
+
+.services__wrapper{
+    max-width: 1000px;
+    width: 100%;
+    min-height: 380px;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.services__circle{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid #1B1D1F;    
+    margin: 0 auto;
+}
+
+.services__point{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    left: 140px;
+    top: -12px;
+    transform-origin: 45% 160px;
+    font-family: 'Sofia Sans';
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+    color: #fff;
+}
+
+.services__point::after{
+    position: absolute;
+    content: "+";
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sofia Sans';
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
+.services__point--1{
+    transform: rotate(45deg);
+}
+
+.services__point--2{
+    transform: rotate(90deg);
+}
+
+.services__point--3{
+    transform: rotate(135deg);
+}
+
+.services__point--4{
+    transform: rotate(225deg);
+}
+
+.services__point--5{
+    transform: rotate(270deg);
+}
+
+.services__point--6{
+    transform: rotate(315deg);
+}
+
+.services__center{
+    width: 180px;
+    height: 162px;
+    background: url('../img/tooth-services.png');
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.services__item-title{
+    font-weight: 600;
+    line-height: 135%;
+    font-size: 20px;
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+
+.services__item-text{
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.services__item{
+    position: absolute;
+    width: 350px;
+    padding: 5px; 
+}
+
+.services__item--right{
+    text-align: right;
+}
+
+.services__item--left{
+    text-align: left;
+}
+
+.services__item-1{
+    top: 0;
+    left: 0;
+}
+
+.services__item-2{
+    top: 130px;
+    left: -50px;
+}
+
+.services__item-3{
+    bottom: 0px;
+    left: 40px;
+}
+
+.services__item-4{
+    top: 0;
+    right: 0;
+}
+
+.services__item-5{
+    top: 130px;
+    right: -50px;
+}
+
+.services__item-6{
+    bottom: 20px;
+    right: 40px;
+}
+
+.attention{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.attention__title{    
+    font-weight: 400;
+    line-height: 140%;
+    font-size: 20px;
+    color: var(--blue);
+    margin-left: 15px;
+}
+
 .appoinment{
     margin: 0 auto 90px;
     max-width: 845px;
     width: 100%;
     min-height: 265px;
-    padding: 10px 9px 8px 15px;
+    padding: 10px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -357,6 +521,7 @@ header {
     border-radius: 10px;
     padding: 30px 20px 45px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .appoinment__title{
@@ -374,21 +539,33 @@ header {
     margin-bottom: 45px;
 }
 
+.form{
+    display: flex;
+}
+
 .form__field{
     background: rgba(217, 217, 217, 0.71);
     border-radius: 8px;
     border: none;
-    padding: 17px 10px 15px 50px;
-    margin-right: 70px;
-    outline: none;
-    height: 57px;
+    padding: 17px 10px 15px 42px;
+    margin-right: 70px;    
+    min-height: 57px;
 }
 
-.form__field::placeholder {
+.form__field input{
+    border: none;
+    background-color: transparent;
+    outline: none; 
+    border-left: 1px solid #000;
+    padding-left: 20px;
+    line-height: 22px;
+}
+
+.form__field input::placeholder {
     font-weight: 600;
     font-size: 19px;
     line-height: 150%;
-    color: rgba(27, 29, 31, 0.51);    
+    color: rgba(27, 29, 31, 0.51);   
 }
 
 .form__field--name{
@@ -401,60 +578,81 @@ header {
     background-image: url("../img/user.svg");
     width: 22px;
     height: 24px;
-    left: -28px;
-    top:0px;
-    z-index: +100;
+    left: 10px;
+    top:18px;
 }
 
-.form__btn{
+.form__field--phone{
+    position: relative;
+}
+
+.form__field--phone::before{
+    position: absolute;
+    content: "";
+    background-image: url("../img/phone-form.svg");
+    width: 22px;
+    height: 24px;
+    left: 10px;
+    top:18px;
+}
+
+#form__btn{
     background: var(--blue);
     border-radius: 8px;
-    width: 180px;
-    padding: 10px;
-    height: 57px;
+    padding: 10px 50px;
+    min-height: 57px;
     font-weight: 600;
     line-height: 140%;
     font-size: 19px;
     border: none;
     color: #fff;
+    text-transform: uppercase;
 }
 
-.form__btn:hover{
+#form__btn:hover{
     cursor: pointer;
 }
 
+.gallery__items{
+    display: flex;
+    justify-content: space-between;
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto 90px;
+}
 
-footer{
-    background: linear-gradient(90deg, rgba(161,199,212,1) 0%, rgba(6,127,170,1) 100%);
-    min-height: 330px;
+.footer{
+    background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+    min-height: 400px;
 }
 
 .footer__inner{
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .footer__logo-title{
-    font-family: "Muller", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    color: #0e2b49;
-    padding-top: 6px;
     text-transform: uppercase;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 400;
+    line-height: 90%;
+    font-size: 39px;
+    color: #0F2D4A;
+    padding-top: 5px;
 }
 
-.footer__logo-title span{
-    line-height: 18px;
-    font-size: 18px;
+.footer__logo-dentist{
     display: block;
     text-transform: none;
-    margin-top: 3px;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 140%;
 }
 
 .footer__logo-img{
-    width: 43px;
-    height: 48px;
+    width: 78px;
+    height: 81px;
     margin-right: 10px;
 }
 
@@ -464,7 +662,7 @@ footer{
 
 .footer__info{
     display: flex;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .contacts__social-flex{
@@ -472,8 +670,10 @@ footer{
 }
 
 .footer__lang{
-    margin-top: 20px;
-    font-weight: 500;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
 }
 
 .footer__lang-item:first-child{
@@ -485,29 +685,46 @@ footer{
 
 .footer__nav-item{
     margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 135%;
+    font-weight: 400;
 }
 
 .footer__working-hours{
-    margin-left: 100px;
-    margin-top: 20px;
+    margin-left: 160px;
+    margin-top: 30px;
 }
 
 .working-hours__title{
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+    font-weight: 600;
+    line-height: 23px;
+    font-size: 20px;
+}
+
+.working-hours__week{
+    font-weight: 400;
+    line-height: 135%;
+    font-size: 20px;
 }
 
 .contacts{
     color: #fff;
-    font-size: 14px;
-    max-width: 300px;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 315px;
     width: 100%;
 }
 
-
 .contacts__title{
-    font-size: 24px;
+    margin: 0 0 20px 0;
     font-weight: 600;
-    margin: 0 0 15px 5px;
+    line-height: 40px;
+    font-size: 34px;
+}
+
+.contacts__item{
+    margin-bottom: 15px;
 }
 
 .contacts__name{
@@ -518,27 +735,32 @@ footer{
     margin: 10px 0;
 }
 
-.contacts__social, .contacts__social-flex{
-    margin-bottom: 10px;
-}
-
-.contacts__social-flex a{
+.contacts__social-flex, .contacts__item-link{
     display: flex;
     align-items: center;
     color: #fff
 }
 
-.contacts__social-flex img{
-    margin-right: 15px;
+.contacts__item-img{
+    margin-right: 20px;
+}
+
+.contacts__img-link{
+    vertical-align: middle;
 }
 
 .contacts__social-item{
-    margin-right: 15px;
+    margin-right: 20px;
     vertical-align: middle;
 }
 
 .contacts__copy{
     text-align: right;
-    font-size: 12px;
-    line-height: 12px;
+    font-weight: 400;
+    line-height: 130%;
+    font-size: 13px;
 }
+
+.animate{
+    background:rgba(255, 255, 255, 0.9);
+  }
