@@ -1,3 +1,24 @@
+@media (max-width: 1150px) {
+    .services__wrapper{
+        max-width: 900px;
+    }
+    .services__item{
+        max-width: 300px;
+    }
+    .services__item-2{
+        left: -30px;
+    }
+    .services__item-5{
+        right: -30px;
+    }
+    .services__item-title{
+        font-size: 18px;
+    }
+    .services__item-text {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1060px) {
     .menu__logo{
         margin-right: 10px;
@@ -52,13 +73,36 @@
     .form__field{
         margin-right: 15px;
     }
+    .services__wrapper{
+        max-width: 900px;
+    }
+    .services__item{
+        max-width: 300px;
+    }
+    .services__circle{
+        width: 250px;
+        height: 250px;
+    }
+    .services__point{
+        transform-origin: 45% 135px;
+        left: 115px;
+    }
+    .services__wrapper{
+        max-width: 800px;
+    }
+    .services__item{
+        max-width: 280px;
+    }
 }
 
 @media (max-width: 880px) {
     .appoinment{
         border: none;
         box-shadow: none;
-        margin: -60px auto 30px
+        margin: 0px auto 30px;
+    }
+    .appoinment__title{
+        font-size: 28px;
     }
     .gallery__items{
         display: block;
@@ -85,6 +129,35 @@
     }
     .contacts__title{
         font-size: 30px;
+    }
+    .services{
+        margin: 40px 0;
+    }
+    .services__wrapper{
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .services__item{
+        max-width: 100%;
+        position: static;
+        margin-bottom: 10px;
+        text-align-last: left;
+    }
+    .services__item-text {
+        font-size: 16px;
+    }
+    .services__circle{
+        display: none;
+    }
+    .attention{
+        margin: 0;
+    }
+    .attention__title{
+        font-size: 18px;
+        line-height: 18px;
+    } 
+    .attention__img{
+        width: 50px;
     }
 }
 
@@ -136,7 +209,7 @@
         grid-template-columns: repeat(1, 1fr);
         margin: 20px auto 20px;
     }
-    .reasons__title{
+    .title{
         font-size: 28px;
     }
     .form{

@@ -381,19 +381,20 @@ body{
 .services__point::after{
     position: absolute;
     content: "+";
-    width: 18px;
-    height: 18px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Sofia Sans';
     font-size: 18px;
     font-weight: 400;
-    display: block;
 }
 
 .services__point--1{
     transform: rotate(45deg);
+}
+
+.services__point--1::after{
+    transform: translate(-50%, -50%) rotate(45deg)
 }
 
 .services__point--2{
@@ -404,8 +405,16 @@ body{
     transform: rotate(135deg);
 }
 
+.services__point--3::after{
+    transform: translate(-50%, -50%) rotate(45deg)
+}
+
 .services__point--4{
     transform: rotate(225deg);
+}
+
+.services__point--4::after{
+    transform: translate(-50%, -50%) rotate(45deg)
 }
 
 .services__point--5{
@@ -414,6 +423,10 @@ body{
 
 .services__point--6{
     transform: rotate(315deg);
+}
+
+.services__point--6::after{
+    transform: translate(-50%, -50%) rotate(45deg)
 }
 
 .services__center{
@@ -443,7 +456,7 @@ body{
 
 .services__item{
     position: absolute;
-    width: 350px;
+    max-width: 350px;
     padding: 5px; 
 }
 
@@ -466,7 +479,7 @@ body{
 }
 
 .services__item-3{
-    bottom: 0px;
+    top: 260px;
     left: 40px;
 }
 
@@ -481,7 +494,7 @@ body{
 }
 
 .services__item-6{
-    bottom: 20px;
+    top: 260px;
     right: 40px;
 }
 
