@@ -5,20 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Homework-9</title>
+  <title>Homework-14</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
-  <header>
+
+  <header class="header">
     <div class="container">
       <div class="header__inner">
         <a href="#" class="menu__logo">
           <img class="menu__logo-img" src="img/logo.svg" alt="logo">
-          <p class="menu__logo-text">DR. Nikola Tesla <span>dentist</span></p>
+          <p class="menu__logo-text">DR. Nikola Tesla <span class="menu__logo-small-text">dentist</span></p>
         </a>
         <div class="menu__wrapper">
           <nav class="menu">
@@ -40,15 +42,22 @@
             <a href="#" class="menu__lang-item menu__lang-item--en">EN</a>
           </div>
         </div>
-
-      </div>
+      </div>      
+      <div class="burger">
+        <div class="checkbox">
+          <input class="checkbox__input" type="checkbox" id="checkbox_1">
+          <label class="checkbox__label" for="checkbox_1"></label>
+          <span class="checkbox__line"></span>          
+        </div>        
+      </div>     
+    </div>
   </header>
 
   <main>
     <section class="content">
       <div class="container">
         <div class="content__box">
-          <h1 class="content__title">PROFESSIONAL <br> AND PAINLESS <span class="content__title-blue">DENTAL
+          <h1 class="content__title">PROFESSIONAL <br> AND PAINLESS <span class="content__title-span">DENTAL
               TREATMENT<span>
           </h1>
           <p class="content__descr">I will conduct a complete diagnosis of the oral cavity and build
@@ -83,65 +92,146 @@
     </section>
 
     <section class="reasons">
-      <h2 class="reasons__title">WHY YOU SHOULD CHOOSE <span>EXACTLY ME?</span></h2>
-      <p class="reasons__descr">
-        Over 15 years of professional experience! More than 2000 people have used my services! More than 70% of patients
-        apply for recommendations
-      </p>
-      <div class="reasons__items">
-        <div class="reasons__item">
-          <div class="reasons__item-up">
-            <div class="reasons__item-number">01</div>
-            <h3 class="reasons__item-title">MODERN EQUIPMENT</h3>
+      <div class="container">
+        <h2 class="title reasons__title">WHY YOU SHOULD CHOOSE <span>EXACTLY ME?</span></h2>
+        <p class="reasons__descr">
+          Over 15 years of professional experience! More than 2000 people have used my services! More than 70% of
+          patients
+          apply for recommendations
+        </p>
+        <div class="reasons__items">
+          <div class="reasons__item">
+            <div class="reasons__item-up">
+              <div class="reasons__item-number">01</div>
+              <h3 class="reasons__item-title">MODERN EQUIPMENT</h3>
+            </div>
+            <p class="reasons__item-text">
+              I use exclusively updated and most modern equipment - everything for the health of my patients
+            </p>
           </div>
-          <p class="reasons__item-text">
-            I use exclusively updated and most modern equipment - everything for the health of my patients
-          </p>
+          <div class="reasons__item">
+            <div class="reasons__item-up">
+              <div class="reasons__item-number">02</div>
+              <h3 class="reasons__item-title">INTERESTS OF THE CLIENT FIRST OF ALL</h3>
+            </div>
+            <p class="reasons__item-text">
+              My task is to find a convenient time for you and build an individual treatment plan.
+            </p>
+          </div>
+          <div class="reasons__item">
+            <div class="reasons__item-up">
+              <div class="reasons__item-number">03</div>
+              <h3 class="reasons__item-title">PROFESSIONAL DENTIST</h3>
+            </div>
+            <p class="reasons__item-text">
+              I have a lot of experience and improve my skills every year.
+            </p>
+          </div>
+          <div class="reasons__item">
+            <div class="reasons__item-up">
+              <div class="reasons__item-number">04</div>
+              <h3 class="reasons__item-title">DENTAL TREATMENT WITHOUT PAIN</h3>
+            </div>
+            <p class="reasons__item-text">
+              I use high-quality anesthetics so that you do not feel pain at all
+            </p>
+          </div>
+          <div class="reasons__item">
+            <div class="reasons__item-up">
+              <div class="reasons__item-number">05</div>
+              <h3 class="reasons__item-title">COMFORTABLE AND COZY ENVIRONMENT</h3>
+            </div>
+            <p class="reasons__item-text">
+              Created a very convenient and friendly environment to make you feel at home
+            </p>
+          </div>
+          <div class="reasons__item">
+            <div class="reasons__item-up">
+              <div class="reasons__item-number">06</div>
+              <h3 class="reasons__item-title">FIRST CONSU LTATION FREE OF CHARGE</h3>
+            </div>
+            <p class="reasons__item-text">
+              You will receive a complete diagnosis, and we will develop a complete individual treatment plan
+            </p>
+          </div>
         </div>
-        <div class="reasons__item">
-          <div class="reasons__item-up">
-            <div class="reasons__item-number">02</div>
-            <h3 class="reasons__item-title">INTERESTS OF THE CLIENT FIRST OF ALL</h3>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="title services__title">WHAT <span>SERVICES</span> DO I PROVIDE?</span></h2>
+        <div class="services__wrapper">
+          <div class="services__circle">
+            <div class="services__points">
+              <div class="services__point services__point--1"></div>
+              <div class="services__point services__point--2"></div>
+              <div class="services__point services__point--3"></div>
+              <div class="services__point services__point--4"></div>
+              <div class="services__point services__point--5"></div>
+              <div class="services__point services__point--6"></div>
+            </div>
+            <div class="services__center"></div>
           </div>
-          <p class="reasons__item-text">
-            My task is to find a convenient time for you and build an individual treatment plan.
-          </p>
+          <div class="services__item services__item--right services__item-1">
+            <h3 class="services__item-title">
+              THERAPEUTIC HELP
+            </h3>
+            <div class="services__item-text">
+              Treatment of caries, pulpitis, periodontitis, aesthetic restoration of teeth. Do not wait for acute
+              manifestations of the disease. I will cure everything qualitatively
+            </div>
+          </div>
+          <div class="services__item services__item--right services__item-2">
+            <h3 class="services__item-title">
+              SURGICAL CARE
+            </h3>
+            <div class="services__item-text">
+              Painless and atraumatic removal of teeth. We will give you the necessary recommendations for recovery
+              taking into account all your features
+            </div>
+          </div>
+          <div class="services__item services__item--right services__item-3">
+            <h3 class="services__item-title">
+              PROFESSIONAL TOOTH CLEANING
+            </h3>
+            <div class="services__item-text">
+              With the help of ultrasound and Air Flow technologies, I will flawlessly clean my teeth from hard and soft
+              plaque, without damaging the enamel
+            </div>
+          </div>
+          <div class="services__item services__item--left services__item-4">
+            <h3 class="services__item-title">
+              PROSTHETICS
+            </h3>
+            <div class="services__item-text">
+              I cooperate with one of the best dental laboratories, so I guarantee that the prosthesis will be reliable,
+              aesthetic and comfortable.
+            </div>
+          </div>
+          <div class="services__item services__item--left services__item-5">
+            <h3 class="services__item-title">
+              CHILDREN'S RECEPTION
+            </h3>
+            <div class="services__item-text">
+              No stress, no pain. Reception is based on understanding the desires, needs, experiences of a small patient
+            </div>
+          </div>
+          <div class="services__item services__item--left services__item-6">
+            <h3 class="services__item-title">
+              PLASMOTHERAPY
+            </h3>
+            <div class="services__item-text">
+              Treatment of periodontal diseases. Allows you to restore the metabolic process, improve microcirculation
+              and metabolism in tissue cells
+            </div>
+          </div>
         </div>
-        <div class="reasons__item">
-          <div class="reasons__item-up">
-            <div class="reasons__item-number">03</div>
-            <h3 class="reasons__item-title">PROFESSIONAL DENTIST</h3>
-          </div>
-          <p class="reasons__item-text">
-            I have a lot of experience and improve my skills every year.
-          </p>
-        </div>
-        <div class="reasons__item">
-          <div class="reasons__item-up">
-            <div class="reasons__item-number">04</div>
-            <h3 class="reasons__item-title">DENTAL TREATMENT WITHOUT PAIN</h3>
-          </div>
-          <p class="reasons__item-text">
-            I use high-quality anesthetics so that you do not feel pain at all
-          </p>
-        </div>
-        <div class="reasons__item">
-          <div class="reasons__item-up">
-            <div class="reasons__item-number">05</div>
-            <h3 class="reasons__item-title">COMFORTABLE AND COZY ENVIRONMENT</h3>
-          </div>
-          <p class="reasons__item-text">
-            Created a very convenient and friendly environment to make you feel at home
-          </p>
-        </div>
-        <div class="reasons__item">
-          <div class="reasons__item-up">
-            <div class="reasons__item-number">06</div>
-            <h3 class="reasons__item-title">FIRST CONSU LTATION FREE OF CHARGE</h3>
-          </div>
-          <p class="reasons__item-text">
-            You will receive a complete diagnosis, and we will develop a complete individual treatment plan
-          </p>
+        <div class="attention">
+          <img class="attention__img" src="img/attention.png" alt="attention">
+          <h3 class="attention__title">
+            The sooner you see a doctor, the cheaper it will cost.
+          </h3>
         </div>
       </div>
     </section>
@@ -155,30 +245,44 @@
           Fill out the form and we will contact you to make an appointment
         </p>
         <form class="form">
-          <input class="form__field form__field--name" type="text" maxlength="30" name="name" placeholder="Your name">
-          <input class="form__field form__field--phone" type="text" name="phone-number" placeholder="Phone number">
-          <input class="form__btn" type="submit" value="Sign in">
+          <div class="form__field form__field--name">
+            <input id="input__name" type="text" maxlength="30" name="name" placeholder="Your name">
+          </div>
+          <div class="form__field form__field--phone">
+            <input id="input__phone" type="tel" name="phone-number" placeholder="Phone number">
+          </div>
+          <input id="form__btn" type="submit" value="Sign in">
         </form>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__items">
+          <img class="gallery__item" src="img/gallery-1.png" alt="woman">
+          <img class="gallery__item" src="img/gallery-2.png" alt="girl">
+          <img class="gallery__item" src="img/gallery-3.png" alt=man"">
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__left">
           <div class="footer__logo">
-            <img class="footer__logo-img" src="img/tooth.png" alt="logo">
+            <img class="footer__logo-img" src="img/tooth.svg" alt="logo">
             <h3 class="footer__logo-title">
-              DR. Nikola Tesla <span>dentist</span>
+              DR. Nikola Tesla <span class="footer__logo-dentist">dentist</span>
             </h3>
           </div>
           <div class="footer__info">
             <div class="footer__info-left">
               <nav>
                 <ul class="footer__nav">
-                  <li class="footer__nav-item"><a href="#">Home</a></li>
-                  <li class="footer__nav-item"><a href="#">Services</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="#">Home</a></li>
+                  <li class="footer__nav-item"><a class="footer__nav-link" href="#">Services</a></li>
                 </ul>
               </nav>
               <div class="footer__lang">
@@ -190,10 +294,10 @@
               <h3 class="working-hours__title">
                 Working hours:
               </h3>
-              <div class="working-hours__week-names">
+              <div class="working-hours__week working-hours__week--names">
                 Mon - Fri:
               </div>
-              <div class="working-hours__week-hours">
+              <div class="working-hours__week working-hours__week--hours">
                 9:00 - 19:00
               </div>
             </div>
@@ -204,45 +308,37 @@
           <h3 class="contacts__title">
             CONTACTS
           </h3>
-          <p class="contacts__name">
+          <p class="contacts__item contacts__item--name">
             Nikola Tesla
           </p>
-          <p class="contacts__adress">
+          <p class="contacts__item contacts__item--adress">
             339 5th Ave, New York
           </p>
-          <div class="contacts__social-flex">
-            <a href="tel:%2B3380999999999">
-              <img src="img/phone.png" alt="phone">
-              <p class="contacts__social-text">
-                +38 (099) 999-99-99
-              </p>
+          <div class="contacts__item contacts__social-flex">
+            <a class="contacts__item-link contacts__item-link--phone" href="tel:%2B3380999999999">
+              +38 (099) 999-99-99
             </a>
           </div>
-          <div class="contacts__social">
-            <a href="viber://chat?number=%2B3380999999999"" class=" contacts__social-item">
-              <img src="img/viber.png" alt="viber">
+          <div class="contacts__item contacts__item--social">
+            <a class="contacts__img-link" href="viber://chat?number=%2B3380999999999"" class=" contacts__social-item">
+              <img class="contacts__item-img" src="img/contact-viber.svg" alt="viber">
             </a>
-            <a href="tg://resolve?domain=%2B3380999999999" class="contacts__social-item">
-              <img src="img/telegram.png" alt="telegram">
+            <a class="contacts__img-link" href="tg://resolve?domain=%2B3380999999999" class="contacts__social-item">
+              <img class="contacts__item-img" src="img/contact-telegram.svg" alt="telegram">
             </a>
-            <a href="https://wa.me/%2B3380999999999" class="contacts__social-item" target="_blank">
-              <img src="img/whatsapp.png" alt="whatsapp">
-            </a>
-          </div>
-          <div class="contacts__social-flex">
-            <a href="https://www.instagram.com/dr.NikTes">
-              <img src="img/instagram.png" alt="instagram">
-              <p class="contacts__social-text">
-                dr.NikTes
-              </p>
+            <a class="contacts__img-link" href="https://wa.me/%2B3380999999999" class="contacts__social-item"
+              target="_blank">
+              <img class="contacts__item-img" src="img/contact-whatsapp.svg" alt="whatsapp">
             </a>
           </div>
-          <div class="contacts__social-flex">
-            <a href="mailto:dr.niktes@gmail.com">
-              <img src="img/email.png" alt="email">
-              <p class="contacts__social-text">
-                dr.niktes@gmail.com
-              </p>
+          <div class="contacts__item contacts__social-flex">
+            <a class="contacts__item-link contacts__item-link--inst" href="https://www.instagram.com/dr.NikTes">
+              dr.NikTes
+            </a>
+          </div>
+          <div class="contacts__item contacts__social-flex">
+            <a class="contacts__item-link contacts__item-link--mail" href="mailto:dr.niktes@gmail.com">
+              dr.niktes@gmail.com
             </a>
           </div>
           <div class="contacts__copy">
@@ -251,6 +347,9 @@
         </div>
       </div>
   </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
