@@ -1,19 +1,38 @@
-//1. Виведення інформації
-console.log(`You can ignore single and double quotes like this: \\ '\\' \\" \\"`);
+//1. Складання зп
+let salaryOne, salaryTwo, salarySum, salaryBon, salaryMin;
 
-//2. Опитування користувача
-let userName, surName, age, adminStatus;
+salaryOne = prompt("Enter your first month salary", '1');
+salaryTwo = prompt("Enter your first month salary", '2');
 
-alert('Please enter your data');
+salarySum = +salaryOne + +salaryTwo;
 
-userName = prompt("What's your name?", 'Name');
-alert(`Your name is: ${userName}`);
+alert(`Your salary for 2 month is: ${salarySum}`);
 
-surName = prompt("What's your surname?", 'Surname');
-alert(`Your full name is: ${userName} ${surName}`);
 
-age = prompt("How old are you?", 'Age');
-alert(`Your full name is: ${userName} ${surName}, your age is: ${age}`);
+//2. Складання зп + бонус
+salaryBon = salarySum + 1;
+alert(`You have extra bonus! Your total salary was: ${salarySum}$. It's increase for 1$ and now it is: ${salaryBon}$`);
 
-adminStatus = confirm('Are you admin?');
-alert(`Your full name is: ${userName} ${surName}, your age is: ${age}, admin status: ${adminStatus}`);
+//3. Чи хочете працювати далі
+salaryMin = 2000;
+alert(`Will you work next? ${salaryBon >= salaryMin}`);
+
+//4. Перероблена версія
+alert(`Далі перероблена версія`);
+
+salaryOne = prompt("Enter your first month salary", '1');
+salaryTwo = prompt("Enter your first month salary", '2');
+
+salarySum = +salaryOne + +salaryTwo;
+
+alert(`Your salary for 2 month is: ${salarySum}`);
+
+salaryBon = salarySum + 1;
+alert(`You have extra bonus! Your total salary was: ${salarySum}$. It's increase for 1$ and now it is: ${salaryBon}$`);
+
+if (salaryBon < 2000){
+    alert(`I'm out`);
+}
+else{
+    alert(`I'm ready to work`);
+}
