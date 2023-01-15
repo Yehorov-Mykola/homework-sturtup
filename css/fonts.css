@@ -1,8 +1,0 @@
-@font-face {
-    font-family: "Sofia Sans";
-    font-display: swap;
-    src: url("../fonts/SofiaSans.woff2") format("woff2"), 
-         url("../fonts/SofiaSans.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-  }
