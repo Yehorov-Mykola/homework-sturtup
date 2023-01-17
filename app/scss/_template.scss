@@ -1,0 +1,13 @@
+%title{
+    text-align: center;
+    font-size: 34px;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+%sectionMargin{
+    margin: 90px 0;
+	@media (max-width: 768px) {
+		margin: 30px 0;
+	}
+}

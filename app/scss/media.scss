@@ -1,0 +1,481 @@
+@import "variables";
+@import "template";
+
+@media (max-width: 1150px) {
+    .services{
+        &__wrapper{
+            max-width: 900px;
+        }
+        &__item{
+            max-width: 300px;
+            &-2{
+                left: -30px;
+            }
+            &-5{
+                right: -30px;
+            }
+            &-title{
+                font-size: 18px;
+            }
+            &-text {
+                font-size: 14px;
+            }
+        }        
+    }    
+}
+
+@media (max-width: 1060px) {
+    .menu{
+        &__logo{
+            margin-right: 10px;
+            min-width: 275px;
+        }
+        &__logo-text{
+            font-size: 30px;
+        }
+        &__logo-small-text{
+            font-size: 22px;
+        }
+        &__logo-img{
+            width: 55px;
+        }
+        &__list {
+            gap: 40px;
+        }
+        &__lang{
+            display: none;        
+        }
+        &__phone {
+            margin-left: 40px;
+        }
+        &__wrapper{
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+    
+    .content__advantages{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+   
+    .advantages__item{
+        padding: 10px;
+
+        &-number {
+            font-size: 50px;
+            line-height: 50px;
+        }
+    }
+
+    .reasons__items{
+        gap: 12px 20px;
+    }
+    .reasons__item{
+        padding: 10px;
+
+        &-title{
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+    
+    .form__field{
+        margin-right: 15px;
+    }
+    .services{
+        &__wrapper{
+            max-width: 900px;
+        }
+        &__item{
+            max-width: 300px;
+        }
+        &__circle{
+            width: 250px;
+            height: 250px;
+        }
+        &__point{
+            transform-origin: 45% 135px;
+            left: 115px;
+        }
+        &__wrapper{
+            max-width: 800px;
+        }
+        &__item{
+            max-width: 280px;
+        }
+    }
+   
+}
+
+@media (max-width: 880px) {
+    .appoinment{
+        border: none;
+        box-shadow: none;
+        margin: 0px auto 30px;
+        &__title{
+            font-size: 28px;
+        }     
+    }
+    .gallery__items{
+        display: block;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    .gallery__item{
+        padding: 10px;
+    }
+    .footer{
+        &__working-hours{
+            margin-left:50px;
+        }
+        &__logo-img {
+            width:50px;
+            height: 70px;
+        }
+        &__logo-title{
+            font-size: 30px;
+        }
+        &__logo-dentist{
+            font-size: 20px;
+        }
+    }
+    
+    .contacts{
+        margin-left: 10px;
+        
+        &__title{
+            font-size: 30px;
+        }
+    }
+
+    .services{
+        &__wrapper{
+            max-width: 100%;
+            margin: 20px auto;
+        }
+        &__item{
+            max-width: 100%;
+            position: static;
+            margin-bottom: 10px;
+            text-align-last: left;
+        }
+        &__item-text {
+            font-size: 16px;
+        }
+        &__circle{
+            display: none;
+        }
+    }
+    
+    .attention{
+        margin: 0;
+
+        &__title{
+            font-size: 18px;
+            line-height: 18px;
+        } 
+        &__img{
+            width: 50px;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .menu{
+        &__logo{
+            min-width: 160px;
+
+            &-img{
+                width: 33px;
+            }
+            &-text{
+                font-size: 17px;
+                line-height: 18px;
+            }
+            &-small-text{
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 0;
+            }
+        }        
+        
+        &__wrapper{
+            margin-top: 0;
+            justify-content: space-between;
+        }
+    }
+    
+    .header{
+        padding-top: 30px;
+    }
+    .content__advantages{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .advantages__item{
+        padding: 10px;
+        min-height:0;
+
+        &-number {
+            font-size: 60px;
+            line-height: 60px;
+        }
+        &-text{
+            font-size: 16px;
+        }
+    }
+    
+    .reasons{
+        margin-top: 280px;
+        &__items{
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(1, 1fr);
+            margin: 20px auto 20px;
+        }
+    }
+    .title{
+        font-size: 28px;
+    }
+    .form{
+        display: block;
+        &__field{
+            width: 100%;
+            margin: 10px 0;
+            text-align: left;
+        }
+    }
+    
+    #form__btn{
+        width: 100%;
+    }
+    .appoinment{
+        border: none;
+        box-shadow: none;
+        margin: 0px auto 30px
+    }  
+    .services__point{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $mainColor;
+        left: 140px;
+        top: -12px;
+        transform-origin: 45% 160px;
+        font-family: 'Sofia Sans';
+        font-size: 18px;
+        line-height: 140%;
+        font-weight: 400;
+        color: #fff;
+    }
+    .menu__btn{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+
+        &::before,
+        &::after{
+            content: "";
+            width: 15px;
+            height: 1px;
+            background-color: $textColor;
+            display: block;
+            margin-bottom: 4px;
+            transition: transform .3s;
+        }
+    
+    }
+    .menu__btn::after{
+        margin-bottom: 0;
+    }
+    .menu__btn.menu__btn--active .menu__btn-line{        
+         opacity: 0;        
+    }
+    .menu__btn.menu__btn--active::after{        
+        transform: translateY(-5px) rotate(-135deg);   
+        background-color: $mainColor;
+    }
+    .menu__btn.menu__btn--active::before{        
+        transform: translateY(5px) rotate(135deg);  
+        background-color: $mainColor; 
+    }    
+    .menu__btn-line {
+        background-color: $textColor;
+        display: block;
+        width: 15px;
+        height: 1px;
+        margin-bottom: 4px;
+        opacity: 1;
+        -webkit-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        transition: opacity 1s;
+    }
+    .menu__list {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 87px;
+        text-align: center;
+        background:rgba(255, 255, 255, 0.9);
+        max-width: 100%;
+        color: $textColor;
+        &-item{
+            display: block;
+            padding-left: 0px;
+        } 
+    }
+    .menu__link {
+        display: block;
+        border-top: 1px solid rgb(65, 65, 65);
+        padding: 10px 0;
+        z-index: 100;
+
+        &:hover {
+            border-bottom: none;
+        } 
+    }
+}
+
+@media (max-width: 640px) {
+    .menu{
+        &__wrapper{
+            justify-content: flex-end;
+        }
+        &__phone{
+            font-weight: 400;
+            line-height: 14px;
+            font-size: 12px;
+            margin-top: 2px;
+
+            &:before {
+                width: 15px;
+                height: 15px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }        
+    }
+    
+    .content{
+        height: 568px;
+        background-position: bottom -33px right 50%, center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 208px, cover;
+
+        &__box{
+            max-width: 100%;
+            text-align: center;
+            padding-top: 115px;
+        }
+        &__buttons{
+            display: flex;
+            justify-content: space-around;        
+        }
+        &__button{
+            display: block;
+            margin: 0;
+        }
+        &__advantages{
+            padding-top: 250px;
+            gap: 15px;
+        }
+        &__title{
+            font-weight: 700;
+            line-height: 130%;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+        &__title-span{
+            display: block;
+        }
+        &__descr{
+            font-size: 12px;
+            line-height: 140%;
+            max-width: 460px;
+            margin-top: 5px;
+            padding: 0 10px;
+        }
+        &__buttons{
+            margin-top: 10px;
+        }
+        &__button{
+            min-width: 100px;
+            font-size: 14px;
+            line-height: 140%;
+            padding: 10px 5px;
+        }
+    }
+    .reasons{
+        margin-top: 340px;
+    }
+    .footer{
+        background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
+        min-height: 370px;
+
+        &__inner{
+            display: block;
+            padding: 30px 0;
+        }
+        &__logo-title{
+            font-size: 27px;
+        }
+        &__logo-dentist{
+            line-height: 140%;
+            font-size: 19px;
+        }
+        &__logo-img{
+            width: 55px;
+            height: 57px;
+        }
+        &__info{
+            margin-top: 27px;
+        }
+        &__nav-item{
+            font-size: 14px;
+            margin-bottom: 14px;
+        }
+        &__lang{
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__working-hours{
+            margin-left:115px;
+        }
+    }
+    
+    .working-hours__title, .working-hours__week{
+        font-size: 14px;
+    }
+    .contacts{
+        margin: 45px 0 0 0;
+        max-width:100%;
+
+        &__title{
+            font-size: 21px;
+            line-height: 25px;
+            margin: 0 0 25px 0;
+        }
+        &__item{
+            font-size: 17px;
+            line-height: 135%;
+        }
+        &__item--social{
+            display: none;
+        }
+        &__copy{
+            font-size: 11px;
+            line-height: 130%;
+            margin-right: 45px;
+            margin-top: 20px;
+        }
+    }
+    
+}
